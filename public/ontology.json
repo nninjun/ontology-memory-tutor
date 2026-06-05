@@ -1,0 +1,1527 @@
+{
+  "generatedAt": "2026-06-05T04:36:23.401820+00:00",
+  "model": "vLLM quality pass: openai/gpt-oss-120b; cached static JSON",
+  "concepts": [
+    {
+      "id": "credit-assignment",
+      "label": "Credit Assignment",
+      "aliases": [
+        "assigning credit"
+      ],
+      "session": 1,
+      "definition": "The process of generating, testing, and modifying actions to determine which contributed to progress toward a goal.",
+      "importance": 1.0,
+      "memoryPriority": "core"
+    },
+    {
+      "id": "intermediate-feedback",
+      "label": "Intermediate Feedback",
+      "aliases": [
+        "proxies",
+        "feedback"
+      ],
+      "session": 1,
+      "definition": "A provisional signal produced during learning that indicates how actions are performing before final outcomes are known.",
+      "importance": 0.96,
+      "memoryPriority": "core"
+    },
+    {
+      "id": "reinforcement-learning",
+      "label": "Reinforcement Learning",
+      "aliases": [
+        "reinforcement",
+        "rewards"
+      ],
+      "session": 1,
+      "definition": "A learning paradigm that assigns credit to actions based on reward signals received from the environment.",
+      "importance": 0.92,
+      "memoryPriority": "core"
+    },
+    {
+      "id": "exploration-exploitation",
+      "label": "Exploration-Exploitation",
+      "aliases": [
+        "exploration",
+        "exploitation"
+      ],
+      "session": 1,
+      "definition": "The trade‑off between trying new actions to gather information and exploiting known rewarding actions.",
+      "importance": 0.88,
+      "memoryPriority": "core"
+    },
+    {
+      "id": "temporal-differencing",
+      "label": "Temporal Differencing",
+      "aliases": [
+        "TD",
+        "value function"
+      ],
+      "session": 1,
+      "definition": "A method that updates value estimates by comparing predictions at successive time steps.",
+      "importance": 0.82,
+      "memoryPriority": "supporting"
+    },
+    {
+      "id": "learning-in-society",
+      "label": "Learning in a Society",
+      "aliases": [
+        "society of mind",
+        "management hypothesis"
+      ],
+      "session": 1,
+      "definition": "A paradigm where many specialized agents decompose a problem and coordinate to assign credit collectively.",
+      "importance": 0.94,
+      "memoryPriority": "core"
+    },
+    {
+      "id": "information-processing",
+      "label": "Information Processing",
+      "aliases": [
+        "syntactic information",
+        "semantic information"
+      ],
+      "session": 2,
+      "definition": "Viewing intelligence as the transformation of information within limits of capacity, abstraction, and context.",
+      "importance": 0.9,
+      "memoryPriority": "core"
+    },
+    {
+      "id": "channel-capacity",
+      "label": "Channel Capacity",
+      "aliases": [
+        "limited channel capacity",
+        "bits"
+      ],
+      "session": 2,
+      "definition": "A restriction on the amount of syntactic information that can be transmitted or processed.",
+      "importance": 0.72,
+      "memoryPriority": "supporting"
+    },
+    {
+      "id": "semantic-abstraction",
+      "label": "Semantic Abstraction",
+      "aliases": [
+        "lists",
+        "abstractions"
+      ],
+      "session": 2,
+      "definition": "The grouping of information into meaningful concepts or lists that reduces problem complexity.",
+      "importance": 0.82,
+      "memoryPriority": "core"
+    },
+    {
+      "id": "modularity",
+      "label": "Modularity",
+      "aliases": [
+        "modules"
+      ],
+      "session": 2,
+      "definition": "Dividing information processing into separable, loosely coupled components to manage complexity.",
+      "importance": 0.76,
+      "memoryPriority": "supporting"
+    },
+    {
+      "id": "iid-ood",
+      "label": "IID vs OOD",
+      "aliases": [
+        "out-of-distribution",
+        "IID"
+      ],
+      "session": 2,
+      "definition": "The distinction between environments where data are independent and identically distributed and those where learned assumptions break down.",
+      "importance": 0.7,
+      "memoryPriority": "supporting"
+    },
+    {
+      "id": "search",
+      "label": "Search",
+      "aliases": [
+        "search space",
+        "state space"
+      ],
+      "session": 3,
+      "definition": "Exploring possible states, actions, or plans to solve a problem.",
+      "importance": 0.88,
+      "memoryPriority": "core"
+    },
+    {
+      "id": "plans",
+      "label": "Plans",
+      "aliases": [
+        "programs",
+        "division of labor"
+      ],
+      "session": 3,
+      "definition": "Structured sequences that partition problem‑solving work into executable procedures.",
+      "importance": 0.84,
+      "memoryPriority": "core"
+    },
+    {
+      "id": "heuristics",
+      "label": "Heuristics",
+      "aliases": [
+        "rules of thumb",
+        "educated guesses"
+      ],
+      "session": 3,
+      "definition": "Guidelines that steer search toward promising regions while conserving computational resources.",
+      "importance": 0.86,
+      "memoryPriority": "core"
+    },
+    {
+      "id": "satisficing",
+      "label": "Satisficing",
+      "aliases": [
+        "satisfice"
+      ],
+      "session": 3,
+      "definition": "Selecting a solution that is good enough when optimality is infeasible.",
+      "importance": 0.84,
+      "memoryPriority": "core"
+    },
+    {
+      "id": "means-ends-analysis",
+      "label": "Means-Ends Analysis",
+      "aliases": [
+        "GPS",
+        "General Problem Solver"
+      ],
+      "session": 3,
+      "definition": "A heuristic that reduces the gap between the current state and the goal by selecting actions that achieve subgoals.",
+      "importance": 0.78,
+      "memoryPriority": "supporting"
+    },
+    {
+      "id": "evolutionary-strategies",
+      "label": "Evolutionary Strategies",
+      "aliases": [
+        "evolution",
+        "adaptation"
+      ],
+      "session": 4,
+      "definition": "Learning methods inspired by variation, selection, and adaptation on performance landscapes.",
+      "importance": 0.86,
+      "memoryPriority": "core"
+    },
+    {
+      "id": "performance-landscape",
+      "label": "Performance Landscape",
+      "aliases": [
+        "landscape",
+        "fitness landscape"
+      ],
+      "session": 4,
+      "definition": "A mapping that relates combinations of choices to their resulting performance levels.",
+      "importance": 0.9,
+      "memoryPriority": "core"
+    },
+    {
+      "id": "hill-climbing",
+      "label": "Hill Climbing",
+      "aliases": [
+        "gradient descent"
+      ],
+      "session": 4,
+      "definition": "A local search that iteratively moves toward higher performance on a smooth landscape.",
+      "importance": 0.76,
+      "memoryPriority": "supporting"
+    },
+    {
+      "id": "rugged-landscape",
+      "label": "Rugged Landscape",
+      "aliases": [
+        "rugged landscapes"
+      ],
+      "session": 4,
+      "definition": "A landscape containing many local peaks that can trap simple adaptive searches.",
+      "importance": 0.74,
+      "memoryPriority": "supporting"
+    },
+    {
+      "id": "representation",
+      "label": "Representation",
+      "aliases": [
+        "representations"
+      ],
+      "session": 5,
+      "definition": "An external or internal structure that constrains and enables problem solving.",
+      "importance": 0.92,
+      "memoryPriority": "core"
+    },
+    {
+      "id": "constraint-network",
+      "label": "Constraint Network",
+      "aliases": [
+        "constraints",
+        "constraint networks"
+      ],
+      "session": 5,
+      "definition": "A representation where variables are linked by constraints that propagate information.",
+      "importance": 0.9,
+      "memoryPriority": "core"
+    },
+    {
+      "id": "constraint-satisfaction",
+      "label": "Constraint Satisfaction",
+      "aliases": [
+        "CSP",
+        "satisfying constraints"
+      ],
+      "session": 5,
+      "definition": "Finding assignments to variables that satisfy all constraints in a network.",
+      "importance": 0.82,
+      "memoryPriority": "supporting"
+    },
+    {
+      "id": "causal-nets",
+      "label": "Causal Nets",
+      "aliases": [
+        "causal networks"
+      ],
+      "session": 5,
+      "definition": "Constraint networks that encode causal relationships rather than mere correlations.",
+      "importance": 0.78,
+      "memoryPriority": "supporting"
+    },
+    {
+      "id": "deep-learning",
+      "label": "Deep Learning",
+      "aliases": [
+        "neural nets",
+        "Boltzmann machines"
+      ],
+      "session": 5,
+      "definition": "A data‑driven approach that learns hierarchical statistical representations from many examples.",
+      "importance": 0.76,
+      "memoryPriority": "context"
+    },
+    {
+      "id": "krr",
+      "label": "Knowledge Representation and Reasoning",
+      "aliases": [
+        "KRR",
+        "knowledge representation"
+      ],
+      "session": 6,
+      "definition": "Explicitly encoding knowledge so a system can perform logical reasoning.",
+      "importance": 0.94,
+      "memoryPriority": "core"
+    },
+    {
+      "id": "advice-taker",
+      "label": "Advice Taker",
+      "aliases": [
+        "McCarthy"
+      ],
+      "session": 6,
+      "definition": "McCarthy’s proposal for an AI that accepts declarative knowledge and reasons to answer queries.",
+      "importance": 0.78,
+      "memoryPriority": "supporting"
+    },
+    {
+      "id": "frame-problem",
+      "label": "Frame Problem",
+      "aliases": [
+        "frames"
+      ],
+      "session": 6,
+      "definition": "The difficulty of determining which facts remain unchanged after an action.",
+      "importance": 0.86,
+      "memoryPriority": "core"
+    },
+    {
+      "id": "default-reasoning",
+      "label": "Default Reasoning",
+      "aliases": [
+        "defaults"
+      ],
+      "session": 6,
+      "definition": "Reasoning with defeasible commonsense assumptions that can be retracted when contradicted.",
+      "importance": 0.82,
+      "memoryPriority": "core"
+    },
+    {
+      "id": "elaboration-tolerance",
+      "label": "Elaboration Tolerance",
+      "aliases": [
+        "elaboration"
+      ],
+      "session": 6,
+      "definition": "The capacity to modify a knowledge base without reworking its entire structure.",
+      "importance": 0.96,
+      "memoryPriority": "core"
+    },
+    {
+      "id": "interaction",
+      "label": "Interaction",
+      "aliases": [
+        "interactionism"
+      ],
+      "session": 7,
+      "definition": "A perspective that intelligence emerges from acting in and responding to concrete situations.",
+      "importance": 0.88,
+      "memoryPriority": "core"
+    },
+    {
+      "id": "situatedness",
+      "label": "Situatedness",
+      "aliases": [
+        "situated"
+      ],
+      "session": 7,
+      "definition": "The principle that intelligent behavior depends on the current context rather than abstract symbols alone.",
+      "importance": 0.78,
+      "memoryPriority": "supporting"
+    },
+    {
+      "id": "embodiment",
+      "label": "Embodiment",
+      "aliases": [
+        "embodied"
+      ],
+      "session": 7,
+      "definition": "The influence of a physical body’s capabilities and limits on intelligent action.",
+      "importance": 0.72,
+      "memoryPriority": "supporting"
+    },
+    {
+      "id": "subsumption-architecture",
+      "label": "Subsumption Architecture",
+      "aliases": [
+        "Brooks"
+      ],
+      "session": 7,
+      "definition": "A layered control system where simple sensorimotor behaviors underlie more complex ones.",
+      "importance": 0.76,
+      "memoryPriority": "supporting"
+    },
+    {
+      "id": "debugging",
+      "label": "Debugging",
+      "aliases": [
+        "generate-test-debug",
+        "troubleshooting"
+      ],
+      "session": 8,
+      "definition": "Identifying and repairing faults in a system or theory through systematic analysis.",
+      "importance": 0.9,
+      "memoryPriority": "core"
+    },
+    {
+      "id": "first-principles",
+      "label": "First Principles Reasoning",
+      "aliases": [
+        "first principles"
+      ],
+      "session": 8,
+      "definition": "Deriving conclusions from fundamental mechanisms rather than surface correlations.",
+      "importance": 0.82,
+      "memoryPriority": "core"
+    },
+    {
+      "id": "qualitative-reasoning",
+      "label": "Qualitative Reasoning",
+      "aliases": [
+        "qualitative information"
+      ],
+      "session": 8,
+      "definition": "Reasoning about physical systems using coarse directional and relational information.",
+      "importance": 0.78,
+      "memoryPriority": "supporting"
+    },
+    {
+      "id": "truth-maintenance",
+      "label": "Truth Maintenance",
+      "aliases": [
+        "TMS",
+        "dependency networks"
+      ],
+      "session": 8,
+      "definition": "Maintaining and updating belief dependencies so that revisions propagate correctly.",
+      "importance": 0.86,
+      "memoryPriority": "core"
+    },
+    {
+      "id": "aggregation",
+      "label": "Aggregation",
+      "aliases": [
+        "aggregating information"
+      ],
+      "session": 9,
+      "definition": "Combining information or judgments from multiple agents or models.",
+      "importance": 0.88,
+      "memoryPriority": "core"
+    },
+    {
+      "id": "pandemonium",
+      "label": "Pandemonium",
+      "aliases": [
+        "Selfridge"
+      ],
+      "session": 9,
+      "definition": "A multi‑agent architecture where competing detectors vie to explain sensory input.",
+      "importance": 0.68,
+      "memoryPriority": "context"
+    },
+    {
+      "id": "blackboard-system",
+      "label": "Blackboard System",
+      "aliases": [
+        "blackboard",
+        "knowledge sources"
+      ],
+      "session": 9,
+      "definition": "A shared workspace where specialized agents cooperatively update and reason over common data.",
+      "importance": 0.82,
+      "memoryPriority": "core"
+    },
+    {
+      "id": "ensemble-methods",
+      "label": "Ensemble Methods",
+      "aliases": [
+        "wisdom of the crowd"
+      ],
+      "session": 9,
+      "definition": "Merging outputs of multiple models so that individual errors can cancel out.",
+      "importance": 0.76,
+      "memoryPriority": "supporting"
+    },
+    {
+      "id": "due-process",
+      "label": "Due Process",
+      "aliases": [
+        "peer review",
+        "reasonableness"
+      ],
+      "session": 9,
+      "definition": "A procedural rule for allocating credit when information sources are inconsistent.",
+      "importance": 0.78,
+      "memoryPriority": "core"
+    },
+    {
+      "id": "actor-model",
+      "label": "Actor Model",
+      "aliases": [
+        "actors",
+        "pure messaging"
+      ],
+      "session": 9,
+      "definition": "A concurrent computation model where autonomous actors communicate via message passing.",
+      "importance": 0.74,
+      "memoryPriority": "supporting"
+    }
+  ],
+  "relations": [
+    {
+      "source": "credit-assignment",
+      "target": "intermediate-feedback",
+      "type": "solves_problem_of",
+      "confidence": 0.94,
+      "evidenceIds": [
+        "ev-credit-assignment-intermediate-feedback"
+      ]
+    },
+    {
+      "source": "intermediate-feedback",
+      "target": "reinforcement-learning",
+      "type": "part_of",
+      "confidence": 0.86,
+      "evidenceIds": [
+        "ev-intermediate-feedback-reinforcement-learning"
+      ]
+    },
+    {
+      "source": "reinforcement-learning",
+      "target": "exploration-exploitation",
+      "type": "part_of",
+      "confidence": 0.9,
+      "evidenceIds": [
+        "ev-reinforcement-learning-exploration-exploitation"
+      ]
+    },
+    {
+      "source": "reinforcement-learning",
+      "target": "temporal-differencing",
+      "type": "extends",
+      "confidence": 0.84,
+      "evidenceIds": [
+        "ev-reinforcement-learning-temporal-differencing"
+      ]
+    },
+    {
+      "source": "reinforcement-learning",
+      "target": "learning-in-society",
+      "type": "contrasts_with",
+      "confidence": 0.92,
+      "evidenceIds": [
+        "ev-reinforcement-learning-learning-in-society"
+      ]
+    },
+    {
+      "source": "credit-assignment",
+      "target": "information-processing",
+      "type": "prerequisite_for",
+      "confidence": 0.9,
+      "evidenceIds": [
+        "ev-credit-assignment-information-processing"
+      ]
+    },
+    {
+      "source": "information-processing",
+      "target": "channel-capacity",
+      "type": "part_of",
+      "confidence": 0.78,
+      "evidenceIds": [
+        "ev-information-processing-channel-capacity"
+      ]
+    },
+    {
+      "source": "information-processing",
+      "target": "semantic-abstraction",
+      "type": "part_of",
+      "confidence": 0.82,
+      "evidenceIds": [
+        "ev-information-processing-semantic-abstraction"
+      ]
+    },
+    {
+      "source": "semantic-abstraction",
+      "target": "modularity",
+      "type": "solves_problem_of",
+      "confidence": 0.78,
+      "evidenceIds": [
+        "ev-semantic-abstraction-modularity"
+      ]
+    },
+    {
+      "source": "information-processing",
+      "target": "iid-ood",
+      "type": "extends",
+      "confidence": 0.72,
+      "evidenceIds": [
+        "ev-information-processing-iid-ood"
+      ]
+    },
+    {
+      "source": "credit-assignment",
+      "target": "search",
+      "type": "prerequisite_for",
+      "confidence": 0.9,
+      "evidenceIds": [
+        "ev-credit-assignment-search"
+      ]
+    },
+    {
+      "source": "plans",
+      "target": "search",
+      "type": "part_of",
+      "confidence": 0.8,
+      "evidenceIds": [
+        "ev-plans-search"
+      ]
+    },
+    {
+      "source": "search",
+      "target": "heuristics",
+      "type": "part_of",
+      "confidence": 0.88,
+      "evidenceIds": [
+        "ev-search-heuristics"
+      ]
+    },
+    {
+      "source": "heuristics",
+      "target": "satisficing",
+      "type": "solves_problem_of",
+      "confidence": 0.84,
+      "evidenceIds": [
+        "ev-heuristics-satisficing"
+      ]
+    },
+    {
+      "source": "satisficing",
+      "target": "means-ends-analysis",
+      "type": "part_of",
+      "confidence": 0.76,
+      "evidenceIds": [
+        "ev-satisficing-means-ends-analysis"
+      ]
+    },
+    {
+      "source": "search",
+      "target": "evolutionary-strategies",
+      "type": "contrasts_with",
+      "confidence": 0.7,
+      "evidenceIds": [
+        "ev-search-evolutionary-strategies"
+      ]
+    },
+    {
+      "source": "evolutionary-strategies",
+      "target": "performance-landscape",
+      "type": "part_of",
+      "confidence": 0.9,
+      "evidenceIds": [
+        "ev-evolutionary-strategies-performance-landscape"
+      ]
+    },
+    {
+      "source": "performance-landscape",
+      "target": "hill-climbing",
+      "type": "part_of",
+      "confidence": 0.82,
+      "evidenceIds": [
+        "ev-performance-landscape-hill-climbing"
+      ]
+    },
+    {
+      "source": "performance-landscape",
+      "target": "rugged-landscape",
+      "type": "part_of",
+      "confidence": 0.78,
+      "evidenceIds": [
+        "ev-performance-landscape-rugged-landscape"
+      ]
+    },
+    {
+      "source": "rugged-landscape",
+      "target": "hill-climbing",
+      "type": "contrasts_with",
+      "confidence": 0.72,
+      "evidenceIds": [
+        "ev-rugged-landscape-hill-climbing"
+      ]
+    },
+    {
+      "source": "performance-landscape",
+      "target": "representation",
+      "type": "prerequisite_for",
+      "confidence": 0.68,
+      "evidenceIds": [
+        "ev-performance-landscape-representation"
+      ]
+    },
+    {
+      "source": "representation",
+      "target": "constraint-network",
+      "type": "part_of",
+      "confidence": 0.9,
+      "evidenceIds": [
+        "ev-representation-constraint-network"
+      ]
+    },
+    {
+      "source": "constraint-network",
+      "target": "constraint-satisfaction",
+      "type": "part_of",
+      "confidence": 0.86,
+      "evidenceIds": [
+        "ev-constraint-network-constraint-satisfaction"
+      ]
+    },
+    {
+      "source": "constraint-network",
+      "target": "causal-nets",
+      "type": "part_of",
+      "confidence": 0.76,
+      "evidenceIds": [
+        "ev-constraint-network-causal-nets"
+      ]
+    },
+    {
+      "source": "constraint-network",
+      "target": "deep-learning",
+      "type": "contrasts_with",
+      "confidence": 0.72,
+      "evidenceIds": [
+        "ev-constraint-network-deep-learning"
+      ]
+    },
+    {
+      "source": "representation",
+      "target": "krr",
+      "type": "prerequisite_for",
+      "confidence": 0.88,
+      "evidenceIds": [
+        "ev-representation-krr"
+      ]
+    },
+    {
+      "source": "krr",
+      "target": "advice-taker",
+      "type": "example_of",
+      "confidence": 0.82,
+      "evidenceIds": [
+        "ev-krr-advice-taker"
+      ]
+    },
+    {
+      "source": "krr",
+      "target": "frame-problem",
+      "type": "solves_problem_of",
+      "confidence": 0.88,
+      "evidenceIds": [
+        "ev-krr-frame-problem"
+      ]
+    },
+    {
+      "source": "default-reasoning",
+      "target": "elaboration-tolerance",
+      "type": "solves_problem_of",
+      "confidence": 0.9,
+      "evidenceIds": [
+        "ev-default-reasoning-elaboration-tolerance"
+      ]
+    },
+    {
+      "source": "frame-problem",
+      "target": "elaboration-tolerance",
+      "type": "extends",
+      "confidence": 0.74,
+      "evidenceIds": [
+        "ev-frame-problem-elaboration-tolerance"
+      ]
+    },
+    {
+      "source": "krr",
+      "target": "interaction",
+      "type": "contrasts_with",
+      "confidence": 0.72,
+      "evidenceIds": [
+        "ev-krr-interaction"
+      ]
+    },
+    {
+      "source": "interaction",
+      "target": "situatedness",
+      "type": "part_of",
+      "confidence": 0.86,
+      "evidenceIds": [
+        "ev-interaction-situatedness"
+      ]
+    },
+    {
+      "source": "interaction",
+      "target": "embodiment",
+      "type": "part_of",
+      "confidence": 0.78,
+      "evidenceIds": [
+        "ev-interaction-embodiment"
+      ]
+    },
+    {
+      "source": "interaction",
+      "target": "subsumption-architecture",
+      "type": "example_of",
+      "confidence": 0.82,
+      "evidenceIds": [
+        "ev-interaction-subsumption-architecture"
+      ]
+    },
+    {
+      "source": "interaction",
+      "target": "debugging",
+      "type": "prerequisite_for",
+      "confidence": 0.64,
+      "evidenceIds": [
+        "ev-interaction-debugging"
+      ]
+    },
+    {
+      "source": "debugging",
+      "target": "first-principles",
+      "type": "part_of",
+      "confidence": 0.84,
+      "evidenceIds": [
+        "ev-debugging-first-principles"
+      ]
+    },
+    {
+      "source": "debugging",
+      "target": "qualitative-reasoning",
+      "type": "part_of",
+      "confidence": 0.84,
+      "evidenceIds": [
+        "ev-debugging-qualitative-reasoning"
+      ]
+    },
+    {
+      "source": "debugging",
+      "target": "truth-maintenance",
+      "type": "part_of",
+      "confidence": 0.88,
+      "evidenceIds": [
+        "ev-debugging-truth-maintenance"
+      ]
+    },
+    {
+      "source": "truth-maintenance",
+      "target": "aggregation",
+      "type": "prerequisite_for",
+      "confidence": 0.66,
+      "evidenceIds": [
+        "ev-truth-maintenance-aggregation"
+      ]
+    },
+    {
+      "source": "aggregation",
+      "target": "pandemonium",
+      "type": "example_of",
+      "confidence": 0.76,
+      "evidenceIds": [
+        "ev-aggregation-pandemonium"
+      ]
+    },
+    {
+      "source": "aggregation",
+      "target": "blackboard-system",
+      "type": "example_of",
+      "confidence": 0.84,
+      "evidenceIds": [
+        "ev-aggregation-blackboard-system"
+      ]
+    },
+    {
+      "source": "aggregation",
+      "target": "ensemble-methods",
+      "type": "example_of",
+      "confidence": 0.82,
+      "evidenceIds": [
+        "ev-aggregation-ensemble-methods"
+      ]
+    },
+    {
+      "source": "aggregation",
+      "target": "due-process",
+      "type": "solves_problem_of",
+      "confidence": 0.78,
+      "evidenceIds": [
+        "ev-aggregation-due-process"
+      ]
+    },
+    {
+      "source": "aggregation",
+      "target": "actor-model",
+      "type": "extends",
+      "confidence": 0.76,
+      "evidenceIds": [
+        "ev-aggregation-actor-model"
+      ]
+    },
+    {
+      "source": "learning-in-society",
+      "target": "blackboard-system",
+      "type": "extends",
+      "confidence": 0.8,
+      "evidenceIds": [
+        "ev-learning-in-society-blackboard-system"
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "id": "ev-credit-assignment-intermediate-feedback",
+      "sourceDocument": "Course Notes_1",
+      "sectionHeading": "1.2 Credit assignment as the problem of generating intermediate feedback",
+      "excerpt": "The three examples also embed the concept of assigning credit - that of learning to evaluate the effects of individual actions on solving a problem - as one of effectively using feedback to modify subsequent actions. Testing the effects of any particular action (e.g., choices of...",
+      "reference": "Session 1",
+      "sourcePath": "output/Course Notes_1/markdown/paper.md",
+      "visualPath": "/visuals/Course_Notes_1_page_03_Figure_01.png",
+      "tablePreview": [
+        "|   Trial |   Probability of going left under a 10% learning rate (more 'exploitative') |   Probability of going left under a 30% learning rate (more 'explorative') |",
+        "|---------|-----------------------------------------------------------------------------|----------------------------------------------------------------------------|",
+        "|       1 |                                                                       0.5   |                                                                      0.5   |",
+        "|       2 |                                                                       0.55  |                                                                      0.65  |",
+        "|       3 |                                                                       0.595 |                                                                      0.755 |",
+        "|       4 |                                                                       0.636 |                                                                      0.829 |"
+      ]
+    },
+    {
+      "id": "ev-intermediate-feedback-reinforcement-learning",
+      "sourceDocument": "Course Notes_1",
+      "sectionHeading": "2. Paradigm 1: assigning credit by reinforcement learning",
+      "excerpt": "In reinforcement learning , an agent assigns credit simply by 'reinforcing' actions that seem to have the effect of getting it closer to its goal. Any such effects of actions on goals are called rewards . The overall goal in reinforcement learning is to ' maximize rewards '. This view...",
+      "reference": "Session 1",
+      "sourcePath": "output/Course Notes_1/markdown/paper.md",
+      "visualPath": "/visuals/Course_Notes_1_page_03_Figure_01.png",
+      "tablePreview": [
+        "|   Trial |   Probability of going left under a 10% learning rate (more 'exploitative') |   Probability of going left under a 30% learning rate (more 'explorative') |",
+        "|---------|-----------------------------------------------------------------------------|----------------------------------------------------------------------------|",
+        "|       1 |                                                                       0.5   |                                                                      0.5   |",
+        "|       2 |                                                                       0.55  |                                                                      0.65  |",
+        "|       3 |                                                                       0.595 |                                                                      0.755 |",
+        "|       4 |                                                                       0.636 |                                                                      0.829 |"
+      ]
+    },
+    {
+      "id": "ev-reinforcement-learning-exploration-exploitation",
+      "sourceDocument": "Course Notes_1",
+      "sectionHeading": "FIGURE 2: A T-maze (Lave &amp; March 1975: p. 250).",
+      "excerpt": "The mouse's 'policy' should be to go left every time, as going left will always be more likely (70% versus 30%) to have cheese. Yet on Day 1, the mouse has no feedback to believe that left is different from right - that is, it has no basis to assign credit either to the action of going...",
+      "reference": "Session 1",
+      "sourcePath": "output/Course Notes_1/markdown/paper.md",
+      "visualPath": "/visuals/Course_Notes_1_page_03_Figure_01.png",
+      "tablePreview": [
+        "|   Trial |   Probability of going left under a 10% learning rate (more 'exploitative') |   Probability of going left under a 30% learning rate (more 'explorative') |",
+        "|---------|-----------------------------------------------------------------------------|----------------------------------------------------------------------------|",
+        "|       1 |                                                                       0.5   |                                                                      0.5   |",
+        "|       2 |                                                                       0.55  |                                                                      0.65  |",
+        "|       3 |                                                                       0.595 |                                                                      0.755 |",
+        "|       4 |                                                                       0.636 |                                                                      0.829 |"
+      ]
+    },
+    {
+      "id": "ev-reinforcement-learning-temporal-differencing",
+      "sourceDocument": "Course Notes_1",
+      "sectionHeading": "2. Paradigm 1: assigning credit by reinforcement learning",
+      "excerpt": "In reinforcement learning , an agent assigns credit simply by 'reinforcing' actions that seem to have the effect of getting it closer to its goal. Any such effects of actions on goals are called rewards . The overall goal in reinforcement learning is to ' maximize rewards '. This view...",
+      "reference": "Session 1",
+      "sourcePath": "output/Course Notes_1/markdown/paper.md",
+      "visualPath": "/visuals/Course_Notes_1_page_03_Figure_01.png",
+      "tablePreview": [
+        "|   Trial |   Probability of going left under a 10% learning rate (more 'exploitative') |   Probability of going left under a 30% learning rate (more 'explorative') |",
+        "|---------|-----------------------------------------------------------------------------|----------------------------------------------------------------------------|",
+        "|       1 |                                                                       0.5   |                                                                      0.5   |",
+        "|       2 |                                                                       0.55  |                                                                      0.65  |",
+        "|       3 |                                                                       0.595 |                                                                      0.755 |",
+        "|       4 |                                                                       0.636 |                                                                      0.829 |"
+      ]
+    },
+    {
+      "id": "ev-reinforcement-learning-learning-in-society",
+      "sourceDocument": "Course Notes_1",
+      "sectionHeading": "2. Paradigm 1: assigning credit by reinforcement learning",
+      "excerpt": "In reinforcement learning , an agent assigns credit simply by 'reinforcing' actions that seem to have the effect of getting it closer to its goal. Any such effects of actions on goals are called rewards . The overall goal in reinforcement learning is to ' maximize rewards '. This view...",
+      "reference": "Session 1",
+      "sourcePath": "output/Course Notes_1/markdown/paper.md",
+      "visualPath": "/visuals/Course_Notes_1_page_03_Figure_01.png",
+      "tablePreview": [
+        "|   Trial |   Probability of going left under a 10% learning rate (more 'exploitative') |   Probability of going left under a 30% learning rate (more 'explorative') |",
+        "|---------|-----------------------------------------------------------------------------|----------------------------------------------------------------------------|",
+        "|       1 |                                                                       0.5   |                                                                      0.5   |",
+        "|       2 |                                                                       0.55  |                                                                      0.65  |",
+        "|       3 |                                                                       0.595 |                                                                      0.755 |",
+        "|       4 |                                                                       0.636 |                                                                      0.829 |"
+      ]
+    },
+    {
+      "id": "ev-credit-assignment-information-processing",
+      "sourceDocument": "Course Notes_1",
+      "sectionHeading": "1.2 Credit assignment as the problem of generating intermediate feedback",
+      "excerpt": "The three examples also embed the concept of assigning credit - that of learning to evaluate the effects of individual actions on solving a problem - as one of effectively using feedback to modify subsequent actions. Testing the effects of any particular action (e.g., choices of...",
+      "reference": "Session 1",
+      "sourcePath": "output/Course Notes_1/markdown/paper.md",
+      "visualPath": "/visuals/Course_Notes_1_page_03_Figure_01.png",
+      "tablePreview": [
+        "|   Trial |   Probability of going left under a 10% learning rate (more 'exploitative') |   Probability of going left under a 30% learning rate (more 'explorative') |",
+        "|---------|-----------------------------------------------------------------------------|----------------------------------------------------------------------------|",
+        "|       1 |                                                                       0.5   |                                                                      0.5   |",
+        "|       2 |                                                                       0.55  |                                                                      0.65  |",
+        "|       3 |                                                                       0.595 |                                                                      0.755 |",
+        "|       4 |                                                                       0.636 |                                                                      0.829 |"
+      ]
+    },
+    {
+      "id": "ev-information-processing-channel-capacity",
+      "sourceDocument": "Course Notes_2",
+      "sectionHeading": "4.1 Learning based on semantic information processing",
+      "excerpt": "Simon's approach emerged from his insight that in organizational decision-making - or, it seemed to him, any complex system syntactic information processing on its own would be far too slow and inefficient for intelligence to emerge, even if possible in theory. The real problem was...",
+      "reference": "Session 2",
+      "sourcePath": "output/Course Notes_2/markdown/paper.md",
+      "visualPath": "/visuals/Course_Notes_2_page_03_Figure_01.png",
+      "tablePreview": []
+    },
+    {
+      "id": "ev-information-processing-semantic-abstraction",
+      "sourceDocument": "Course Notes_2",
+      "sectionHeading": "4.1 Learning based on semantic information processing",
+      "excerpt": "Simon's approach emerged from his insight that in organizational decision-making - or, it seemed to him, any complex system syntactic information processing on its own would be far too slow and inefficient for intelligence to emerge, even if possible in theory. The real problem was...",
+      "reference": "Session 2",
+      "sourcePath": "output/Course Notes_2/markdown/paper.md",
+      "visualPath": "/visuals/Course_Notes_2_page_03_Figure_01.png",
+      "tablePreview": []
+    },
+    {
+      "id": "ev-semantic-abstraction-modularity",
+      "sourceDocument": "Course Notes_2",
+      "sectionHeading": "4.2 Units of information: lists",
+      "excerpt": "Simon proposed that, rather than reduce symbols to individual bits that are formed into meaningless strings of 0's and 1's, the bits should be organized into meaningful patterns (e.g., names of the components of watches) that he called lists . Lists differ from bits in that they are not...",
+      "reference": "Session 2",
+      "sourcePath": "output/Course Notes_2/markdown/paper.md",
+      "visualPath": "/visuals/Course_Notes_2_page_03_Figure_01.png",
+      "tablePreview": []
+    },
+    {
+      "id": "ev-information-processing-iid-ood",
+      "sourceDocument": "Course Notes_2",
+      "sectionHeading": "4.1 Learning based on semantic information processing",
+      "excerpt": "Simon's approach emerged from his insight that in organizational decision-making - or, it seemed to him, any complex system syntactic information processing on its own would be far too slow and inefficient for intelligence to emerge, even if possible in theory. The real problem was...",
+      "reference": "Session 2",
+      "sourcePath": "output/Course Notes_2/markdown/paper.md",
+      "visualPath": "/visuals/Course_Notes_2_page_03_Figure_01.png",
+      "tablePreview": []
+    },
+    {
+      "id": "ev-credit-assignment-search",
+      "sourceDocument": "Course Notes_1",
+      "sectionHeading": "1.2 Credit assignment as the problem of generating intermediate feedback",
+      "excerpt": "The three examples also embed the concept of assigning credit - that of learning to evaluate the effects of individual actions on solving a problem - as one of effectively using feedback to modify subsequent actions. Testing the effects of any particular action (e.g., choices of...",
+      "reference": "Session 1",
+      "sourcePath": "output/Course Notes_1/markdown/paper.md",
+      "visualPath": "/visuals/Course_Notes_1_page_03_Figure_01.png",
+      "tablePreview": [
+        "|   Trial |   Probability of going left under a 10% learning rate (more 'exploitative') |   Probability of going left under a 30% learning rate (more 'explorative') |",
+        "|---------|-----------------------------------------------------------------------------|----------------------------------------------------------------------------|",
+        "|       1 |                                                                       0.5   |                                                                      0.5   |",
+        "|       2 |                                                                       0.55  |                                                                      0.65  |",
+        "|       3 |                                                                       0.595 |                                                                      0.755 |",
+        "|       4 |                                                                       0.636 |                                                                      0.829 |"
+      ]
+    },
+    {
+      "id": "ev-plans-search",
+      "sourceDocument": "Course Notes_3",
+      "sectionHeading": "3.1 Search as a heuristic process",
+      "excerpt": "We will call any process of transitioning from an initial state to a goal state in a search tree as a search process . Agents search by generating, evaluating, and selecting among plans - i.e., sequences of actions that transition them from an initial state toward a goal state - using...",
+      "reference": "Session 3",
+      "sourcePath": "output/Course Notes_3/markdown/paper.md",
+      "visualPath": "/visuals/Course_Notes_3_page_01_Figure_01.png",
+      "tablePreview": []
+    },
+    {
+      "id": "ev-search-heuristics",
+      "sourceDocument": "Course Notes_3",
+      "sectionHeading": "5.3 Learning as the use of search operations to acquire new heuristics like an expert",
+      "excerpt": "Simon realized that a central challenge was how an AI system could have enough diverse experiences to learn heuristics for solving any problem. This challenge of learning to acquire heuristics became regarded among scholars of search as the central 'bottleneck' to intelligence. One...",
+      "reference": "Session 3",
+      "sourcePath": "output/Course Notes_3/markdown/paper.md",
+      "visualPath": "/visuals/Course_Notes_3_page_01_Figure_01.png",
+      "tablePreview": []
+    },
+    {
+      "id": "ev-heuristics-satisficing",
+      "sourceDocument": "Course Notes_3",
+      "sectionHeading": "3.2 Search as a satisficing process",
+      "excerpt": "Given that an agent cannot evaluate every state of a search tree and must use heuristics, it cannot be guaranteed of finding the best plan for solving a problem . Based on this observation, Simon famously proposed that intelligent agents ' satisfice ', meaning that they search only for...",
+      "reference": "Session 3",
+      "sourcePath": "output/Course Notes_3/markdown/paper.md",
+      "visualPath": "/visuals/Course_Notes_3_page_01_Figure_01.png",
+      "tablePreview": []
+    },
+    {
+      "id": "ev-satisficing-means-ends-analysis",
+      "sourceDocument": "Course Notes_3",
+      "sectionHeading": "5.1 Heuristics as general methods for manipulating physical symbols",
+      "excerpt": "In Simon search, heuristics are used to inform actions for manipulating physical symbols in programs. Specifically a program would have: (i) A set of meaningful physical symbols organized based on lists, and which can be transformed into descriptions of intermediate states; (ii) A set...",
+      "reference": "Session 3",
+      "sourcePath": "output/Course Notes_3/markdown/paper.md",
+      "visualPath": "/visuals/Course_Notes_3_page_01_Figure_01.png",
+      "tablePreview": []
+    },
+    {
+      "id": "ev-search-evolutionary-strategies",
+      "sourceDocument": "Course Notes_3",
+      "sectionHeading": "3.1 Search as a heuristic process",
+      "excerpt": "We will call any process of transitioning from an initial state to a goal state in a search tree as a search process . Agents search by generating, evaluating, and selecting among plans - i.e., sequences of actions that transition them from an initial state toward a goal state - using...",
+      "reference": "Session 3",
+      "sourcePath": "output/Course Notes_3/markdown/paper.md",
+      "visualPath": "/visuals/Course_Notes_3_page_01_Figure_01.png",
+      "tablePreview": []
+    },
+    {
+      "id": "ev-evolutionary-strategies-performance-landscape",
+      "sourceDocument": "Course Notes_4",
+      "sectionHeading": "1. Introduction",
+      "excerpt": "In the previous session, we introduced the idea that credit may be assigned efficiently by viewing problem-solving as a search for merely satisfactory solutions. Yet recall our examples from the first session: the shipbuilder learning to build ships, the app developer learning to...",
+      "reference": "Session 4",
+      "sourcePath": "output/Course Notes_4/markdown/paper.md",
+      "visualPath": "/visuals/Course_Notes_4_page_05_Figure_01.png",
+      "tablePreview": [
+        "| Landscape topology                      | Landscape features                                                  | Learning challenges                                                                                                 | Learning strategies                                                                |",
+        "|-----------------------------------------|---------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------|",
+        "| Optimizing in single- peaked landscapes | One global peak, otherwise 'smooth'                                 | If interdependencies are large, vast info. processing required                                                      | Hill-climbing / gradient descent                                                   |",
+        "| Optimizing in rugged landscapes         | Multiple local peaks                                                | Myopia, path dependence, superstitious learning                                                                     | Balance exploration ( long-jumping ) and Exploitation ( hill-climbing )            |",
+        "| Satisficing in rugged landscapes        | Aspiration below global peak but above some local peaks             | Setting a realistic aspiration level                                                                                | Use heuristics to set an aspiration level                                          |",
+        "| Satisficing in mesa landscapes          | A flat bottom and a flat top, with no hills or gradients in between | Problems arise only as symptoms, where there are a lack of gradients for trial-and-error learning (sparse learning) | Taking ' giant strides ' by logically and coherently piecing together the problem. |"
+      ]
+    },
+    {
+      "id": "ev-performance-landscape-hill-climbing",
+      "sourceDocument": "Course Notes_4",
+      "sectionHeading": "2.2 Visualizing adaptive processes with performance landscapes",
+      "excerpt": "The process of adaptively search for higher fitness in a problem-solving environment can be usefully visualized through the metaphor of a performance landscape. A performance landscape is a picture of the relationship between an agent's actions (e.g., choices or observations) and its...",
+      "reference": "Session 4",
+      "sourcePath": "output/Course Notes_4/markdown/paper.md",
+      "visualPath": "/visuals/Course_Notes_4_page_05_Figure_01.png",
+      "tablePreview": [
+        "| Landscape topology                      | Landscape features                                                  | Learning challenges                                                                                                 | Learning strategies                                                                |",
+        "|-----------------------------------------|---------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------|",
+        "| Optimizing in single- peaked landscapes | One global peak, otherwise 'smooth'                                 | If interdependencies are large, vast info. processing required                                                      | Hill-climbing / gradient descent                                                   |",
+        "| Optimizing in rugged landscapes         | Multiple local peaks                                                | Myopia, path dependence, superstitious learning                                                                     | Balance exploration ( long-jumping ) and Exploitation ( hill-climbing )            |",
+        "| Satisficing in rugged landscapes        | Aspiration below global peak but above some local peaks             | Setting a realistic aspiration level                                                                                | Use heuristics to set an aspiration level                                          |",
+        "| Satisficing in mesa landscapes          | A flat bottom and a flat top, with no hills or gradients in between | Problems arise only as symptoms, where there are a lack of gradients for trial-and-error learning (sparse learning) | Taking ' giant strides ' by logically and coherently piecing together the problem. |"
+      ]
+    },
+    {
+      "id": "ev-performance-landscape-rugged-landscape",
+      "sourceDocument": "Course Notes_4",
+      "sectionHeading": "2.2 Visualizing adaptive processes with performance landscapes",
+      "excerpt": "The process of adaptively search for higher fitness in a problem-solving environment can be usefully visualized through the metaphor of a performance landscape. A performance landscape is a picture of the relationship between an agent's actions (e.g., choices or observations) and its...",
+      "reference": "Session 4",
+      "sourcePath": "output/Course Notes_4/markdown/paper.md",
+      "visualPath": "/visuals/Course_Notes_4_page_05_Figure_01.png",
+      "tablePreview": [
+        "| Landscape topology                      | Landscape features                                                  | Learning challenges                                                                                                 | Learning strategies                                                                |",
+        "|-----------------------------------------|---------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------|",
+        "| Optimizing in single- peaked landscapes | One global peak, otherwise 'smooth'                                 | If interdependencies are large, vast info. processing required                                                      | Hill-climbing / gradient descent                                                   |",
+        "| Optimizing in rugged landscapes         | Multiple local peaks                                                | Myopia, path dependence, superstitious learning                                                                     | Balance exploration ( long-jumping ) and Exploitation ( hill-climbing )            |",
+        "| Satisficing in rugged landscapes        | Aspiration below global peak but above some local peaks             | Setting a realistic aspiration level                                                                                | Use heuristics to set an aspiration level                                          |",
+        "| Satisficing in mesa landscapes          | A flat bottom and a flat top, with no hills or gradients in between | Problems arise only as symptoms, where there are a lack of gradients for trial-and-error learning (sparse learning) | Taking ' giant strides ' by logically and coherently piecing together the problem. |"
+      ]
+    },
+    {
+      "id": "ev-rugged-landscape-hill-climbing",
+      "sourceDocument": "Course Notes_4",
+      "sectionHeading": "3.2 Rugged landscapes: hill-climbing and long-jumps",
+      "excerpt": "Let us go back to the earlier example of designing four components of a laptop - the screen, CPU, memory, and keyboard. Let us call each component's effect on performance as its contribution to the 'fitness' of the laptop (e.g., how valuable the laptop would be for potential customers)....",
+      "reference": "Session 4",
+      "sourcePath": "output/Course Notes_4/markdown/paper.md",
+      "visualPath": "/visuals/Course_Notes_4_page_05_Figure_01.png",
+      "tablePreview": [
+        "| Landscape topology                      | Landscape features                                                  | Learning challenges                                                                                                 | Learning strategies                                                                |",
+        "|-----------------------------------------|---------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------|",
+        "| Optimizing in single- peaked landscapes | One global peak, otherwise 'smooth'                                 | If interdependencies are large, vast info. processing required                                                      | Hill-climbing / gradient descent                                                   |",
+        "| Optimizing in rugged landscapes         | Multiple local peaks                                                | Myopia, path dependence, superstitious learning                                                                     | Balance exploration ( long-jumping ) and Exploitation ( hill-climbing )            |",
+        "| Satisficing in rugged landscapes        | Aspiration below global peak but above some local peaks             | Setting a realistic aspiration level                                                                                | Use heuristics to set an aspiration level                                          |",
+        "| Satisficing in mesa landscapes          | A flat bottom and a flat top, with no hills or gradients in between | Problems arise only as symptoms, where there are a lack of gradients for trial-and-error learning (sparse learning) | Taking ' giant strides ' by logically and coherently piecing together the problem. |"
+      ]
+    },
+    {
+      "id": "ev-performance-landscape-representation",
+      "sourceDocument": "Course Notes_4",
+      "sectionHeading": "2.2 Visualizing adaptive processes with performance landscapes",
+      "excerpt": "The process of adaptively search for higher fitness in a problem-solving environment can be usefully visualized through the metaphor of a performance landscape. A performance landscape is a picture of the relationship between an agent's actions (e.g., choices or observations) and its...",
+      "reference": "Session 4",
+      "sourcePath": "output/Course Notes_4/markdown/paper.md",
+      "visualPath": "/visuals/Course_Notes_4_page_05_Figure_01.png",
+      "tablePreview": [
+        "| Landscape topology                      | Landscape features                                                  | Learning challenges                                                                                                 | Learning strategies                                                                |",
+        "|-----------------------------------------|---------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------|",
+        "| Optimizing in single- peaked landscapes | One global peak, otherwise 'smooth'                                 | If interdependencies are large, vast info. processing required                                                      | Hill-climbing / gradient descent                                                   |",
+        "| Optimizing in rugged landscapes         | Multiple local peaks                                                | Myopia, path dependence, superstitious learning                                                                     | Balance exploration ( long-jumping ) and Exploitation ( hill-climbing )            |",
+        "| Satisficing in rugged landscapes        | Aspiration below global peak but above some local peaks             | Setting a realistic aspiration level                                                                                | Use heuristics to set an aspiration level                                          |",
+        "| Satisficing in mesa landscapes          | A flat bottom and a flat top, with no hills or gradients in between | Problems arise only as symptoms, where there are a lack of gradients for trial-and-error learning (sparse learning) | Taking ' giant strides ' by logically and coherently piecing together the problem. |"
+      ]
+    },
+    {
+      "id": "ev-representation-constraint-network",
+      "sourceDocument": "Course Notes_5",
+      "sectionHeading": "3.2 Propagating information across a constraint network",
+      "excerpt": "A set of constraints relevant to a complex problem in AI and organizations can be thought of as structured into a network. A network (also called a graph structure ) refers to any mathematical structure that can be described in terms of some set of 'nodes' and 'links' (also called...",
+      "reference": "Session 5",
+      "sourcePath": "output/Course Notes_5/markdown/paper.md",
+      "visualPath": "/visuals/Course_Notes_5_page_01_Figure_01.png",
+      "tablePreview": [
+        "|                  | Constraint satisfaction problems (CSPs)                                                                                                                                                  | Causal nets (a.k.a., Bayesian networks)                                                                    | Boltzmann machines (a.k.a., building block of deep learning)                         |",
+        "|------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------|",
+        "| Variables        | Any variables.                                                                                                                                                                           | Random variables (i.e., variables that can be manipulated like in an experiment for testing a hypothesis). | Binary variables (i.e., intended to resemble simple neurons that are 'on' or 'off'). |",
+        "| Domains          | Any discrete or continuous domains.                                                                                                                                                      | Any discrete or continuous domains.                                                                        | 1 or 0.                                                                              |",
+        "| Constraints      | Any constraints (e.g., 'less than', 'above', 'equal to' etc.) among variables given by a specific problem (e.g., 'all different' constraints for rows, columns and 3x3 grids in Sudoku). | Cause-effect relations among variables, which are given, but probabilities are 'learned'.                  | Correlations (weights) among variables that are not given and need to be learned.    |",
+        "| Structure of the | Any structure.                                                                                                                                                                           | Directed, acyclic.                                                                                         | Undirected, cyclic (densely                                                          |"
+      ]
+    },
+    {
+      "id": "ev-constraint-network-constraint-satisfaction",
+      "sourceDocument": "Course Notes_5",
+      "sectionHeading": "4.1 Constraint satisfaction problems (CSPs)",
+      "excerpt": "For given problems where the goal is to find a single solution (e.g. Sudoku), you can think of constraint satisfaction as almost like a new type of search that interleaves representations . The variables and domains can be of any type, but the goal should be given and usually is unique...",
+      "reference": "Session 5",
+      "sourcePath": "output/Course Notes_5/markdown/paper.md",
+      "visualPath": "/visuals/Course_Notes_5_page_01_Figure_01.png",
+      "tablePreview": [
+        "|                  | Constraint satisfaction problems (CSPs)                                                                                                                                                  | Causal nets (a.k.a., Bayesian networks)                                                                    | Boltzmann machines (a.k.a., building block of deep learning)                         |",
+        "|------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------|",
+        "| Variables        | Any variables.                                                                                                                                                                           | Random variables (i.e., variables that can be manipulated like in an experiment for testing a hypothesis). | Binary variables (i.e., intended to resemble simple neurons that are 'on' or 'off'). |",
+        "| Domains          | Any discrete or continuous domains.                                                                                                                                                      | Any discrete or continuous domains.                                                                        | 1 or 0.                                                                              |",
+        "| Constraints      | Any constraints (e.g., 'less than', 'above', 'equal to' etc.) among variables given by a specific problem (e.g., 'all different' constraints for rows, columns and 3x3 grids in Sudoku). | Cause-effect relations among variables, which are given, but probabilities are 'learned'.                  | Correlations (weights) among variables that are not given and need to be learned.    |",
+        "| Structure of the | Any structure.                                                                                                                                                                           | Directed, acyclic.                                                                                         | Undirected, cyclic (densely                                                          |"
+      ]
+    },
+    {
+      "id": "ev-constraint-network-causal-nets",
+      "sourceDocument": "Course Notes_5",
+      "sectionHeading": "3.2 Propagating information across a constraint network",
+      "excerpt": "A set of constraints relevant to a complex problem in AI and organizations can be thought of as structured into a network. A network (also called a graph structure ) refers to any mathematical structure that can be described in terms of some set of 'nodes' and 'links' (also called...",
+      "reference": "Session 5",
+      "sourcePath": "output/Course Notes_5/markdown/paper.md",
+      "visualPath": "/visuals/Course_Notes_5_page_01_Figure_01.png",
+      "tablePreview": [
+        "|                  | Constraint satisfaction problems (CSPs)                                                                                                                                                  | Causal nets (a.k.a., Bayesian networks)                                                                    | Boltzmann machines (a.k.a., building block of deep learning)                         |",
+        "|------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------|",
+        "| Variables        | Any variables.                                                                                                                                                                           | Random variables (i.e., variables that can be manipulated like in an experiment for testing a hypothesis). | Binary variables (i.e., intended to resemble simple neurons that are 'on' or 'off'). |",
+        "| Domains          | Any discrete or continuous domains.                                                                                                                                                      | Any discrete or continuous domains.                                                                        | 1 or 0.                                                                              |",
+        "| Constraints      | Any constraints (e.g., 'less than', 'above', 'equal to' etc.) among variables given by a specific problem (e.g., 'all different' constraints for rows, columns and 3x3 grids in Sudoku). | Cause-effect relations among variables, which are given, but probabilities are 'learned'.                  | Correlations (weights) among variables that are not given and need to be learned.    |",
+        "| Structure of the | Any structure.                                                                                                                                                                           | Directed, acyclic.                                                                                         | Undirected, cyclic (densely                                                          |"
+      ]
+    },
+    {
+      "id": "ev-constraint-network-deep-learning",
+      "sourceDocument": "Course Notes_5",
+      "sectionHeading": "3.2 Propagating information across a constraint network",
+      "excerpt": "A set of constraints relevant to a complex problem in AI and organizations can be thought of as structured into a network. A network (also called a graph structure ) refers to any mathematical structure that can be described in terms of some set of 'nodes' and 'links' (also called...",
+      "reference": "Session 5",
+      "sourcePath": "output/Course Notes_5/markdown/paper.md",
+      "visualPath": "/visuals/Course_Notes_5_page_01_Figure_01.png",
+      "tablePreview": [
+        "|                  | Constraint satisfaction problems (CSPs)                                                                                                                                                  | Causal nets (a.k.a., Bayesian networks)                                                                    | Boltzmann machines (a.k.a., building block of deep learning)                         |",
+        "|------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------|",
+        "| Variables        | Any variables.                                                                                                                                                                           | Random variables (i.e., variables that can be manipulated like in an experiment for testing a hypothesis). | Binary variables (i.e., intended to resemble simple neurons that are 'on' or 'off'). |",
+        "| Domains          | Any discrete or continuous domains.                                                                                                                                                      | Any discrete or continuous domains.                                                                        | 1 or 0.                                                                              |",
+        "| Constraints      | Any constraints (e.g., 'less than', 'above', 'equal to' etc.) among variables given by a specific problem (e.g., 'all different' constraints for rows, columns and 3x3 grids in Sudoku). | Cause-effect relations among variables, which are given, but probabilities are 'learned'.                  | Correlations (weights) among variables that are not given and need to be learned.    |",
+        "| Structure of the | Any structure.                                                                                                                                                                           | Directed, acyclic.                                                                                         | Undirected, cyclic (densely                                                          |"
+      ]
+    },
+    {
+      "id": "ev-representation-krr",
+      "sourceDocument": "Course Notes_5",
+      "sectionHeading": "2.2 Digital representations and complex problem-solving",
+      "excerpt": "Unlike the above examples, many representations that we use today are stored in electronic digital computers. Though the electronic digital computer emerged in the 1940s, it was too big and expensive to change organizations' representations comprehensively until the diffusion of the...",
+      "reference": "Session 5",
+      "sourcePath": "output/Course Notes_5/markdown/paper.md",
+      "visualPath": "/visuals/Course_Notes_5_page_01_Figure_01.png",
+      "tablePreview": [
+        "|                              | Definition                                                          | Types                                                                                                                                                                                                                                                                                                                                             | Car example                                                                                                                      |",
+        "|------------------------------|---------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------|",
+        "| Variables, {X 1 ,...,X n }   | Anything measurable and relevant to a problem.                      | Choices/decisions of the agent, or simply observations of the problem-solving environment                                                                                                                                                                                                                                                         | 'Exterior color' and 'Interior color'.                                                                                           |",
+        "| Domains, {D 1 ,. . . , D n } | The set of allowable values {v 1 ,...,v k } for each variable X i . | Any discrete (e.g., integers, categories) or continuous (e.g., probabilities) values.                                                                                                                                                                                                                                                             | The possible colors offered by the car manufacturer.                                                                             |",
+        "| Constraints                  | The set of allowable combinations of values of variables.           | Any relations among variables, such as temporal order ('Task A should come before Task B'), thresholds (Variable A should be above X value), target ranges (Variable A should be above X value and below Y value), inequalities (Variable A should be different than Variable B), equalities (Variable A and Variable B should be the same), etc. | Ex. 'Exterior color' cannot be the same as 'Interior color'.                                                                     |",
+        "| Scope                        | The set of variables involved in a constraint.                      | Unary (single variable), binary (two-variable), or n-ary/higher-order (three or more variables).                                                                                                                                                                                                                                                  | 'Exterior color' and 'Interior color'.                                                                                           |"
+      ]
+    },
+    {
+      "id": "ev-krr-advice-taker",
+      "sourceDocument": "Course Notes_6",
+      "sectionHeading": "1. Introduction",
+      "excerpt": "Our previous session proposed learning to assign credit by representing problems as networks of constraints , and propagating information across these networks. In this session, we will build on these proposals by studying how AI systems and organizations may: (1) augment constraints...",
+      "reference": "Session 6",
+      "sourcePath": "output/Course Notes_6/markdown/paper.md",
+      "visualPath": "/visuals/Course_Notes_6_page_001_preview.png",
+      "tablePreview": []
+    },
+    {
+      "id": "ev-krr-frame-problem",
+      "sourceDocument": "Course Notes_6",
+      "sectionHeading": "1. Introduction",
+      "excerpt": "Our previous session proposed learning to assign credit by representing problems as networks of constraints , and propagating information across these networks. In this session, we will build on these proposals by studying how AI systems and organizations may: (1) augment constraints...",
+      "reference": "Session 6",
+      "sourcePath": "output/Course Notes_6/markdown/paper.md",
+      "visualPath": "/visuals/Course_Notes_6_page_001_preview.png",
+      "tablePreview": []
+    },
+    {
+      "id": "ev-default-reasoning-elaboration-tolerance",
+      "sourceDocument": "Course Notes_6",
+      "sectionHeading": "4. Elaborating commonsense knowledge",
+      "excerpt": "The process of representing knowledge in an AI system or organization - whether general commonsense knowledge or knowledge specific to the context of problems solved in a particular AI system or organization - should not be thought of in isolation. Rather, representing new knowledge...",
+      "reference": "Session 6",
+      "sourcePath": "output/Course Notes_6/markdown/paper.md",
+      "visualPath": "/visuals/Course_Notes_6_page_001_preview.png",
+      "tablePreview": []
+    },
+    {
+      "id": "ev-frame-problem-elaboration-tolerance",
+      "sourceDocument": "Course Notes_6",
+      "sectionHeading": "4. Elaborating commonsense knowledge",
+      "excerpt": "The process of representing knowledge in an AI system or organization - whether general commonsense knowledge or knowledge specific to the context of problems solved in a particular AI system or organization - should not be thought of in isolation. Rather, representing new knowledge...",
+      "reference": "Session 6",
+      "sourcePath": "output/Course Notes_6/markdown/paper.md",
+      "visualPath": "/visuals/Course_Notes_6_page_001_preview.png",
+      "tablePreview": []
+    },
+    {
+      "id": "ev-krr-interaction",
+      "sourceDocument": "Course Notes_6",
+      "sectionHeading": "1. Introduction",
+      "excerpt": "Our previous session proposed learning to assign credit by representing problems as networks of constraints , and propagating information across these networks. In this session, we will build on these proposals by studying how AI systems and organizations may: (1) augment constraints...",
+      "reference": "Session 6",
+      "sourcePath": "output/Course Notes_6/markdown/paper.md",
+      "visualPath": "/visuals/Course_Notes_6_page_001_preview.png",
+      "tablePreview": []
+    },
+    {
+      "id": "ev-interaction-situatedness",
+      "sourceDocument": "Course Notes_7",
+      "sectionHeading": "3.2 Action as situated, embodied, and embedded",
+      "excerpt": "The above examples suggest important aspects of intelligently solving problems are learned using sensorimotor actions to interact with and experience the physical world, and where goals are homeostatic - about maintaining states, rather than finding a single optimal or satisfactory...",
+      "reference": "Session 7",
+      "sourcePath": "output/Course Notes_7/markdown/paper.md",
+      "visualPath": "/visuals/Course_Notes_7_page_05_Figure_01.png",
+      "tablePreview": []
+    },
+    {
+      "id": "ev-interaction-embodiment",
+      "sourceDocument": "Course Notes_7",
+      "sectionHeading": "1. Introduction",
+      "excerpt": "Let us summarize our story so far: AI systems and organizations are intelligent if they can learn to assign credit to actions when solving complex problems. They assign credit by manipulating symbols. Symbols are units such as bit strings and lists, or composites of these such as search...",
+      "reference": "Session 7",
+      "sourcePath": "output/Course Notes_7/markdown/paper.md",
+      "visualPath": "/visuals/Course_Notes_7_page_05_Figure_01.png",
+      "tablePreview": []
+    },
+    {
+      "id": "ev-interaction-subsumption-architecture",
+      "sourceDocument": "Course Notes_7",
+      "sectionHeading": "4.1 Learning based on goals for interacting with the world: the subsumption architecture",
+      "excerpt": "Brooks proposed that the sensorimotor actions fundamental to the evolution of intelligence could be understood as corresponding to multiple goals (also called behaviors ) that need to be maintained by an agent. In this view, the challenge of intelligence is not so much to search a tree...",
+      "reference": "Session 7",
+      "sourcePath": "output/Course Notes_7/markdown/paper.md",
+      "visualPath": "/visuals/Course_Notes_7_page_05_Figure_01.png",
+      "tablePreview": []
+    },
+    {
+      "id": "ev-interaction-debugging",
+      "sourceDocument": "Course Notes_7",
+      "sectionHeading": "1. Introduction",
+      "excerpt": "Let us summarize our story so far: AI systems and organizations are intelligent if they can learn to assign credit to actions when solving complex problems. They assign credit by manipulating symbols. Symbols are units such as bit strings and lists, or composites of these such as search...",
+      "reference": "Session 7",
+      "sourcePath": "output/Course Notes_7/markdown/paper.md",
+      "visualPath": "/visuals/Course_Notes_7_page_05_Figure_01.png",
+      "tablePreview": []
+    },
+    {
+      "id": "ev-debugging-first-principles",
+      "sourceDocument": "Course Notes_8",
+      "sectionHeading": "2.3 First principles reasoning",
+      "excerpt": "Consider that, even for a physical system such as a mechanical watch with relatively well-defined parts and components, the number of possible 'bugs' is combinatorially explosive in ways far beyond even a complex search tree (i.e., state space). Due to this combinatorial explosion, it...",
+      "reference": "Session 8",
+      "sourcePath": "output/Course Notes_8/markdown/paper.md",
+      "visualPath": "/visuals/Course_Notes_8_page_07_Figure_01.png",
+      "tablePreview": [
+        "| 7               | 123 45 6      | 1 2 3 4 5 6 789   | 1 2 3 4 5 6 8L 9   | 2 3 4 5 6 78    | 1 2 3 4 5 6   | 2 3 4 5 6 78 9   | 1 23 4 56 789   | 1           |",
+        "|-----------------|---------------|-------------------|--------------------|-----------------|---------------|------------------|-----------------|-------------|",
+        "| 1 2 3 4 5 6 789 | 123 4 789     | 6                 | 5                  | 123 456 789     | 9             | 8                | 123 456 789     | 123 456 789 |",
+        "| 123 4 5 6 789   | 9             | 4                 | 123 4 5 6 789      | 2               | 123 456 789   | 3                | 7               | 123 456 789 |",
+        "| 123 4 5 6 7 89  | 7             | 123 456 789       | 4                  | 123 456 789     | 3             | 123 456 7 89     | 9               | 123 456 789 |",
+        "| 123 4 5 6 789   | 123 4 789     | 3                 | 123 4 5 6 789      | 1 2 3 4 5 6 789 | 123 456 789   | 7                | 123 45 6 789    | 123 45 789  |"
+      ]
+    },
+    {
+      "id": "ev-debugging-qualitative-reasoning",
+      "sourceDocument": "Course Notes_8",
+      "sectionHeading": "3.1 Qualitative reasoning: 'envisioning' how a physical system functions",
+      "excerpt": "In addition to first principles reasoning, a second - and perhaps counterintuitive - strategy for debugging representations of the physical world is to do so based on what is called ' qualitative reasoning ' with these principles. By qualitative reasoning, what is meant is that...",
+      "reference": "Session 8",
+      "sourcePath": "output/Course Notes_8/markdown/paper.md",
+      "visualPath": "/visuals/Course_Notes_8_page_07_Figure_01.png",
+      "tablePreview": [
+        "| 7               | 123 45 6      | 1 2 3 4 5 6 789   | 1 2 3 4 5 6 8L 9   | 2 3 4 5 6 78    | 1 2 3 4 5 6   | 2 3 4 5 6 78 9   | 1 23 4 56 789   | 1           |",
+        "|-----------------|---------------|-------------------|--------------------|-----------------|---------------|------------------|-----------------|-------------|",
+        "| 1 2 3 4 5 6 789 | 123 4 789     | 6                 | 5                  | 123 456 789     | 9             | 8                | 123 456 789     | 123 456 789 |",
+        "| 123 4 5 6 789   | 9             | 4                 | 123 4 5 6 789      | 2               | 123 456 789   | 3                | 7               | 123 456 789 |",
+        "| 123 4 5 6 7 89  | 7             | 123 456 789       | 4                  | 123 456 789     | 3             | 123 456 7 89     | 9               | 123 456 789 |",
+        "| 123 4 5 6 789   | 123 4 789     | 3                 | 123 4 5 6 789      | 1 2 3 4 5 6 789 | 123 456 789   | 7                | 123 45 6 789    | 123 45 789  |"
+      ]
+    },
+    {
+      "id": "ev-debugging-truth-maintenance",
+      "sourceDocument": "Course Notes_8",
+      "sectionHeading": "3.3 'Truth maintenance' using dependency networks",
+      "excerpt": "In the previous section, we framed the debugging process as carried out by an organization of 'propagators'. Each propagator processes information about constraints on some physical system ('confluences'). They propagate information to one another to qualitatively reason about and...",
+      "reference": "Session 8",
+      "sourcePath": "output/Course Notes_8/markdown/paper.md",
+      "visualPath": "/visuals/Course_Notes_8_page_07_Figure_01.png",
+      "tablePreview": [
+        "| 7               | 123 45 6      | 1 2 3 4 5 6 789   | 1 2 3 4 5 6 8L 9   | 2 3 4 5 6 78    | 1 2 3 4 5 6   | 2 3 4 5 6 78 9   | 1 23 4 56 789   | 1           |",
+        "|-----------------|---------------|-------------------|--------------------|-----------------|---------------|------------------|-----------------|-------------|",
+        "| 1 2 3 4 5 6 789 | 123 4 789     | 6                 | 5                  | 123 456 789     | 9             | 8                | 123 456 789     | 123 456 789 |",
+        "| 123 4 5 6 789   | 9             | 4                 | 123 4 5 6 789      | 2               | 123 456 789   | 3                | 7               | 123 456 789 |",
+        "| 123 4 5 6 7 89  | 7             | 123 456 789       | 4                  | 123 456 789     | 3             | 123 456 7 89     | 9               | 123 456 789 |",
+        "| 123 4 5 6 789   | 123 4 789     | 3                 | 123 4 5 6 789      | 1 2 3 4 5 6 789 | 123 456 789   | 7                | 123 45 6 789    | 123 45 789  |"
+      ]
+    },
+    {
+      "id": "ev-truth-maintenance-aggregation",
+      "sourceDocument": "Course Notes_8",
+      "sectionHeading": "3.3 'Truth maintenance' using dependency networks",
+      "excerpt": "In the previous section, we framed the debugging process as carried out by an organization of 'propagators'. Each propagator processes information about constraints on some physical system ('confluences'). They propagate information to one another to qualitatively reason about and...",
+      "reference": "Session 8",
+      "sourcePath": "output/Course Notes_8/markdown/paper.md",
+      "visualPath": "/visuals/Course_Notes_8_page_07_Figure_01.png",
+      "tablePreview": [
+        "| 7               | 123 45 6      | 1 2 3 4 5 6 789   | 1 2 3 4 5 6 8L 9   | 2 3 4 5 6 78    | 1 2 3 4 5 6   | 2 3 4 5 6 78 9   | 1 23 4 56 789   | 1           |",
+        "|-----------------|---------------|-------------------|--------------------|-----------------|---------------|------------------|-----------------|-------------|",
+        "| 1 2 3 4 5 6 789 | 123 4 789     | 6                 | 5                  | 123 456 789     | 9             | 8                | 123 456 789     | 123 456 789 |",
+        "| 123 4 5 6 789   | 9             | 4                 | 123 4 5 6 789      | 2               | 123 456 789   | 3                | 7               | 123 456 789 |",
+        "| 123 4 5 6 7 89  | 7             | 123 456 789       | 4                  | 123 456 789     | 3             | 123 456 7 89     | 9               | 123 456 789 |",
+        "| 123 4 5 6 789   | 123 4 789     | 3                 | 123 4 5 6 789      | 1 2 3 4 5 6 789 | 123 456 789   | 7                | 123 45 6 789    | 123 45 789  |"
+      ]
+    },
+    {
+      "id": "ev-aggregation-pandemonium",
+      "sourceDocument": "Course Notes_9",
+      "sectionHeading": "1. Introduction",
+      "excerpt": "In our second to last session, let us return to the AI paradigm that we sketched at the beginning of our course: Minsky's idea of ' learning in a society '. Recall that we introduced Minsky's idea using the example of constructing, rather than merely navigating, a T-maze. The key...",
+      "reference": "Session 9",
+      "sourcePath": "output/Course Notes_9/markdown/paper.md",
+      "visualPath": "/visuals/Course_Notes_9_page_02_Figure_01.png",
+      "tablePreview": []
+    },
+    {
+      "id": "ev-aggregation-blackboard-system",
+      "sourceDocument": "Course Notes_9",
+      "sectionHeading": "2.2 Cooperation: blackboard systems",
+      "excerpt": "Compare the competition-based way of aggregating predictions ('shouts') in Pandemonium to our prior example in the course of Sudoku. To do so, imagine that we assigned each of the 27 explicit constraints in Sudoku (nine columns, nine rows, and nine 3x3's) to different 'agents'. In...",
+      "reference": "Session 9",
+      "sourcePath": "output/Course Notes_9/markdown/paper.md",
+      "visualPath": "/visuals/Course_Notes_9_page_02_Figure_01.png",
+      "tablePreview": []
+    },
+    {
+      "id": "ev-aggregation-ensemble-methods",
+      "sourceDocument": "Course Notes_9",
+      "sectionHeading": "2.3 Consensus: ensemble methods",
+      "excerpt": "A third strategy in AI, called ensemble methods, is based on aggregating predictions across multiple agents, called ' learners ', to reach consensus on a decision. The collection of 'learners' is the ensemble . The fundamental difference from 'demons' in Pandemonium or 'knowledge...",
+      "reference": "Session 9",
+      "sourcePath": "output/Course Notes_9/markdown/paper.md",
+      "visualPath": "/visuals/Course_Notes_9_page_02_Figure_01.png",
+      "tablePreview": []
+    },
+    {
+      "id": "ev-aggregation-due-process",
+      "sourceDocument": "Course Notes_9",
+      "sectionHeading": "1. Introduction",
+      "excerpt": "In our second to last session, let us return to the AI paradigm that we sketched at the beginning of our course: Minsky's idea of ' learning in a society '. Recall that we introduced Minsky's idea using the example of constructing, rather than merely navigating, a T-maze. The key...",
+      "reference": "Session 9",
+      "sourcePath": "output/Course Notes_9/markdown/paper.md",
+      "visualPath": "/visuals/Course_Notes_9_page_02_Figure_01.png",
+      "tablePreview": []
+    },
+    {
+      "id": "ev-aggregation-actor-model",
+      "sourceDocument": "Course Notes_9",
+      "sectionHeading": "1. Introduction",
+      "excerpt": "In our second to last session, let us return to the AI paradigm that we sketched at the beginning of our course: Minsky's idea of ' learning in a society '. Recall that we introduced Minsky's idea using the example of constructing, rather than merely navigating, a T-maze. The key...",
+      "reference": "Session 9",
+      "sourcePath": "output/Course Notes_9/markdown/paper.md",
+      "visualPath": "/visuals/Course_Notes_9_page_02_Figure_01.png",
+      "tablePreview": []
+    },
+    {
+      "id": "ev-learning-in-society-blackboard-system",
+      "sourceDocument": "Course Notes_1",
+      "sectionHeading": "4.3 The management hypothesis",
+      "excerpt": "Geoffrey's credit assignment challenge is vastly more complex (or, at the least, qualitatively different) from the challenge in the reinforcement learning paradigm of modifying beliefs or value functions. Actions to assign credit include not just going left or right in a maze, or even...",
+      "reference": "Session 1",
+      "sourcePath": "output/Course Notes_1/markdown/paper.md",
+      "visualPath": "/visuals/Course_Notes_1_page_03_Figure_01.png",
+      "tablePreview": [
+        "|   Trial |   Probability of going left under a 10% learning rate (more 'exploitative') |   Probability of going left under a 30% learning rate (more 'explorative') |",
+        "|---------|-----------------------------------------------------------------------------|----------------------------------------------------------------------------|",
+        "|       1 |                                                                       0.5   |                                                                      0.5   |",
+        "|       2 |                                                                       0.55  |                                                                      0.65  |",
+        "|       3 |                                                                       0.595 |                                                                      0.755 |",
+        "|       4 |                                                                       0.636 |                                                                      0.829 |"
+      ]
+    }
+  ]
+}

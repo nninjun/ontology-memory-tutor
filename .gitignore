@@ -1,0 +1,14 @@
+node_modules/
+dist/
+.DS_Store
+*.log
+
+# Raw and parsed course materials can be large and may include non-public course content.
+input/
+output/
+
+# Local runtime/cache files
+.env
+.env.*
+__pycache__/
+*.pyc
