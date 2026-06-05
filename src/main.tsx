@@ -398,25 +398,28 @@ function App() {
             </section>
 
             {analysis && (
-              <section className="analysis-panel">
-                <div className={`decision ${analysis.decision.toLowerCase()}`}>
-                  <span>{analysis.decision}</span>
-                  <strong>{analysis.signal}</strong>
-                  <small>confidence {analysis.confidence.toFixed(2)}</small>
-                </div>
-                <div className="concept-strip">
-                  {analysis.concepts.length ? (
-                    analysis.concepts.map((concept) => (
-                      <button key={concept.id} onClick={() => setSelectedId(concept.id)} type="button">
-                        <span>S{concept.session}</span>
-                        {concept.label}
-                      </button>
-                    ))
-                  ) : (
-                    <p>{analysis.ignoredReason}</p>
-                  )}
-                </div>
-              </section>
+              <>
+                <section className="analysis-panel">
+                  <div className={`decision ${analysis.decision.toLowerCase()}`}>
+                    <span>{analysis.decision}</span>
+                    <strong>{analysis.signal}</strong>
+                    <small>confidence {analysis.confidence.toFixed(2)}</small>
+                  </div>
+                  <div className="concept-strip">
+                    {analysis.concepts.length ? (
+                      analysis.concepts.map((concept) => (
+                        <button key={concept.id} onClick={() => setSelectedId(concept.id)} type="button">
+                          <span>S{concept.session}</span>
+                          {concept.label}
+                        </button>
+                      ))
+                    ) : (
+                      <p>{analysis.ignoredReason}</p>
+                    )}
+                  </div>
+                </section>
+                <ReviewOutput analysis={analysis} onSelect={setSelectedId} />
+              </>
             )}
 
             <section className="memory-dashboard">
@@ -743,6 +746,55 @@ function CriticalReview({ concept, evidence, relations }: { concept: Concept; ev
           {contrast ? " in the ontology limit the claim?" : " appear elsewhere in the ontology?"}
         </p>
       </article>
+    </section>
+  );
+}
+
+function ReviewOutput({ analysis, onSelect }: { analysis: AnalysisResult; onSelect: (id: string) => void }) {
+  if (!analysis.concepts.length) {
+    return (
+      <section className="review-output">
+        <div className="section-heading">
+          <h2>Targeted Review Output</h2>
+          <p>No memory update was made.</p>
+        </div>
+        <p>{analysis.ignoredReason}</p>
+      </section>
+    );
+  }
+
+  const primary = analysis.concepts[0];
+  const supporting = analysis.concepts.slice(1, 4);
+  return (
+    <section className="review-output">
+      <div className="section-heading">
+        <h2>Targeted Review Output</h2>
+        <p>Short answer, concept list, and next review action.</p>
+      </div>
+      <div className="review-answer">
+        <strong>Short answer</strong>
+        <p>
+          Start with <button onClick={() => onSelect(primary.id)} type="button">{primary.label}</button>: {primary.definition}
+          {supporting.length ? " Then compare it with the related concepts below instead of storing the whole conversation." : ""}
+        </p>
+      </div>
+      <div className="review-next">
+        <strong>Concepts to review</strong>
+        <div className="concept-strip compact">
+          {analysis.concepts.map((concept) => (
+            <button key={concept.id} onClick={() => onSelect(concept.id)} type="button">
+              <span>S{concept.session}</span>
+              {concept.label}
+            </button>
+          ))}
+        </div>
+      </div>
+      <div className="review-next">
+        <strong>Next action</strong>
+        <p>
+          Open the first concept, inspect its evidence and figure/table, then mark the concept as confused, reviewing, or known in Student State.
+        </p>
+      </div>
     </section>
   );
 }
